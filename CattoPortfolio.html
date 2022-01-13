@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Cattos portfolio</title>
+
+        <!--Css & js link-->
+        <link rel="stylesheet" href="Catto.css">
+        <script src="catto.js"></script>
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+         <!--Google font-->
+         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+
+    <body>
+
+        <!-- HEADER-->
+        <div class="header">
+            <h1 class="header-1" style="text-align: center; margin: 10px;padding: 5px;"> El Catto </h1>
+            <h3 class="sub-header-1" style="text-align: center;font-style: italic;margin: 10px;"> The paw that saves the day </h3>
+            <hr>
+        </div>
+
+
+    <!--Grid card-->
+    <div class="grid-card-1">
+           
+        <!-- Content 1: Objectictives/ skills/ pic -->
+        <div class="content-1">
+            <!--pic-->
+             <div class="pic">
+            <img class="profile" src="Images/catpic1.jpg" alt="A cat picture"> 
+            </div>
+
+            <!--info items: Objectives & skills -->
+            <div class="info-items">
+                <!-- info 1: Objectives -->
+                <div class="info-1">
+                    <h2>Objectives</h2> 
+                        <ul>
+                            <li>To create harmony between felines and humans</li>
+                            <li>To maximize global index for happiness</li>
+                            <li>To reduce discrimanation amongst animals</li>
+                        </ul> 
+                </div>
+
+                <!-- info 2: skills -->
+                <div class="info-2">
+                        <h2>Skills</h2>
+                            <!--Star rating -->
+                            <div class="paw-rating">
+                                <p>Strength: <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>  </p>
+
+                                    <p>Agility: <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i> </p>
+
+                                        <p>Night vision: <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i> </p>
+                            </div>
+                </div>
+  
+        </div> </div>
+
+
+        <!-- Content 2: Education/ Extra CCA/ Languages -->
+        <div class="content-2"> 
+                <!--Education table-->
+                <div class="Education">
+                <h2>Education</h2>
+                    <table width= '85%' ' border='1'>
+                        <tr>
+                            <th>Qualification</th> 
+                            <th>Institution</th>
+                            <th>Years</th>  
+                        </tr>
+    
+                        <tr>
+                            <td>O-level</td>
+                            <td>St.John's School</td>
+                            <td>2017-2019</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Foundation in Science and Technology</td>
+                            <td>Sunway College</td>
+                            <td>2020-2021</td>
+                        </tr>
+                    </table>
+                </div>
+            
+                <!--Extra CCA table-->
+                <div class="ExtraCCA">
+                     <h2>Extracurricular activities</h2>
+                        <table width= '85%' ' border='1'>
+                        <tr>
+                            <th>Extra curricular activity</th> 
+                            <th>Achievements</th>  
+                        </tr>
+    
+                        <tr>
+                            <td>Horticulture club</td>
+                            <td>Participated in the national <em>The 50 Trees</em> project.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>St.John's choir club</td>
+                            <td>Organized a choir performance for Oprah Winfrey's 50th birthday.</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Sunway Tech club</td>
+                            <td>Invented a new social media platform with html.</td>
+                        </tr>
+                        </table>
+                </div>
+    
+                <!--Languages-->
+                <div class="languages">
+                    <h2>Proficent languages</h2>
+                         <ol>
+                            <li>Meownese</li>
+                            <li>Malay</li>
+                            <li>English</li>
+                        </ol>
+
+                </div>
+
+        </div>
+
+        <!-- Content 3: Contact form -->
+        <div class="content-3">
+            <div class="contact-style" onsubmit="return validation()">
+                <h2>CONTACT</h2>
+                    <div id="error_message"></div>
+
+                    <!--contact form-->
+                        <form id="my_form">
+                                <label>Name:</label>
+                                <input type="text" id="name" required>
+                
+                                <label>Phone:</label>
+                                <input type="text"  id="phone">
+                          
+                                <label>Message:</label>
+                                <textarea id="message"></textarea>
+                        
+                                <button style="border-color: darkblue;border-width: 5px;padding: 12px;width: 124px;background-color: white;cursor:pointer;font-family: 'Quicksand', sans-serif;font-size: 15px; border-radius: 30px;">
+                                    Send
+                                </button>
+  
+                        </form>
+   
+            </div>
+        </div>
+
+        <!-- Content 4: Social media -->
+        <div class="content-4">
+                <!-- Social media icons -->
+                <ul class="social-media-icons">
+                 <li>
+                    <a href= "https://www.instagram.com/cats_of_instagram/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                 </li> 
+
+                 <li>
+                    <a href= "https://www.facebook.com/tinykittens/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                 </li> 
+                
+                 <li>
+                    <a href= "https://twitter.com/Cats" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                 </li> 
+
+                </ul>
+
+                <!-- Social media banner -->
+                <ul class="social-media-banner" style=" font-size: 35px; padding: 15px">
+                    <li>  <h2>SOCIAL MEDIA</h2> </li>
+                    <li> <p >Feel free to keep in contact with me!</p></li>
+                </ul>
+        </div>
+       
+    </div>
+
+
+</body>
+</head>
+</html>
